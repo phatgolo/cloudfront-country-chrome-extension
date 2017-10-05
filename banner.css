@@ -1,0 +1,51 @@
+country-banner {
+    display: flex;
+    position: fixed;
+    width: 500px;
+    min-height: 35px;
+    left: 5px;
+    top: 5px;
+    padding: 5px 10px 5px 5px;
+    justify-content: center;
+    background-color: #f2f2f2;
+    color: #000;
+    font-size: 12px;
+    border-radius: 2px;
+    border: 0;
+    box-shadow: 0 1px 3px #000;
+    z-index: 100000;
+}
+
+country-banner-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+country-banner-label {
+    display: block;
+    flex: 10;
+    white-space: nowrap;
+}
+
+country-banner-icon {
+    display: block;
+    flex: 1;
+    font-style: normal;
+    font-size: 2em;
+    text-align: center;
+    margin-right: 5px;
+}
+
+country-banner-button {
+    flex: 1;
+    text-align: center;
+    color: #0067b8;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+country-banner-button:hover {
+    color: #0067b8;
+    text-decoration: underline;
+}

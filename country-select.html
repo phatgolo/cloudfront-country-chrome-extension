@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select country</title>
+    <link rel="stylesheet" href="country-select.css">
+</head>
+    <body>
+        <header>
+            <div class="selected-country row">
+                <img class="icon" />
+                <output class="name"></output>
+                <div class="clear">
+                    <button>×</button>
+                </div>
+            </div>
+            <input type="search" placeholder="Search country or capital" id="CountrySearch">
+        </header>
+        <main>
+        </main>
+        <template id="Template">
+            <div class="row" tabindex="0"><img class="icon" /><output class="name"></output></div>
+        </template>
+        <script src="countries.js"></script>
+        <script src="country-select.js"></script>
+    </body>
+</html>

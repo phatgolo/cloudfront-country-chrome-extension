@@ -1,0 +1,111 @@
+html, body {
+    width: 200px;
+}
+
+body {
+    margin: 0px;
+    padding-top: 27px;
+}
+
+body.just-search {
+    padding-top: 33px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #DDD;
+    padding: 3px 5px;
+    font-size: 1em;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #235FB8;
+}
+
+button {
+    background-color: #DDD;
+    border: 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .2) inset;
+    color: #FFF;
+    font-size: 1.2em;
+    border-radius: 8px;
+    padding: 3px;
+    line-height: 10px;
+    height: 16px;
+    width: 16px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background-color: #333;
+}
+
+header {
+    padding: 5px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FFF;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #333;
+    color: #EEE;
+}
+
+.row {
+    padding: 7px 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    transition: .3s;
+}
+
+main .row:hover,
+main .row:focus {
+    outline: none;
+    background-color: #555;
+}
+
+.icon {
+    flex: 1;
+    width: 1px;
+    pointer-events: none;
+    background-size: contain;
+    background-position: center;
+    margin-right: 5px;
+}
+
+.name {
+    flex: 7;
+    pointer-events: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.selected-country {
+    display: none;
+    padding: 0;
+}
+
+.selected-country .name {
+    flex: 6;
+}
+
+.clear {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}

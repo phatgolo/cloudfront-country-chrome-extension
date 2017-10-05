@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Cloudfront Country Enulator",
+    "description": "This extension allows the user to emulate country of any Site using Amazon Cloudfront on environments not using Cloudfront.",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "icon_disabled.png",
+        "default_popup": "country-select.html"
+    },
+    "icons": {
+        "128": "icon_128.png"
+    },
+    "background": {
+        "scripts": [
+            "request-header.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "css": ["banner.css"],
+            "js": ["banner.js"]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "webRequest",
+        "webRequestBlocking",
+        "*://*/*"
+    ]
+}
